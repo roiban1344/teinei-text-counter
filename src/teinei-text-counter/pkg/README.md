@@ -27,5 +27,5 @@ console.log(text.split(''))
 //
 
 console.log(splitIntoGraphemeClusters(text))
-//-> 🙂 ['H', 'e', 'l', 'l', 'o', '👩‍👩‍👦']
+//-> 🙂 ['🌞', 'H', 'e', 'l', 'l', 'o', '👩‍👩‍👦']
 ```
