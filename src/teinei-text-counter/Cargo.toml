@@ -6,7 +6,7 @@ edition = "2018"
 description = "teinei-text-counter is a minimal WebAssembly wrapper of the unicode-segmentation crate just for counting grapheme clusters."
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/roiban1344/teinei-text-counter"
-
+keywords = ["unicode", "emoji"]
 
 [lib]
 crate-type = ["cdylib", "rlib"]
