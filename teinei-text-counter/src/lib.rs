@@ -1,5 +1,5 @@
-mod utils;
-
+use js_sys::Array;
+use unicode_segmentation::UnicodeSegmentation;
 use wasm_bindgen::prelude::*;
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
@@ -8,12 +8,12 @@ use wasm_bindgen::prelude::*;
 #[global_allocator]
 static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
-#[wasm_bindgen]
-extern {
-    fn alert(s: &str);
+#[wasm_bindgen(js_name=countGraphemeClusters)]
+pub fn count_grapheme_clusters(s: &str) -> usize {
+    s.graphemes(true).count()
 }
 
-#[wasm_bindgen]
-pub fn greet() {
-    alert("Hello, teinei-text-counter!");
+#[wasm_bindgen(js_name=toGraphemeClusters)]
+pub fn to_grapheme_clusters(s: &str) -> Array {
+    s.graphemes(true).map(|g| JsValue::from_str(g)).collect()
 }

@@ -1,0 +1,3 @@
+[build]
+rustflags = ["--remap-path-prefix=/Users/username=/home"]
+# Replace "/Users/username" with the actual path where `.cargo` exists.
