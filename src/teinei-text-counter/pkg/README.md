@@ -2,9 +2,11 @@
 
 `teinei-text-counter` is a minimal WebAssembly wrapper of the [unicode-segmentation](https://crates.io/crates/unicode-segmentation) crate just for counting [grapheme clusters](https://unicode.org/reports/tr29/). "丁寧"(teinei) means "careful" or "deliberate."
 
-## Usage
+## API
 
 ### `countGraphemeClusters(string)`
+
+Returns the length of a string with a extended grapheme cluster as a minimum unit.
 
 ```js
 import { countGraphemeClusters } from 'teinei-text-counter'
@@ -17,6 +19,8 @@ console.log(countGraphemeClusters(text))
 ```
 
 ### `splitIntoGraphemeClusters(string)`
+
+Split a string into extended grapheme clusters and return as an array.
 
 ```js
 import { splitIntoGraphemeClusters } from 'teinei-text-counter'
