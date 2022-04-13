@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  rust-wasm:
+    build: .
+    container_name: rust-wasm
+    tty: true
+    working_dir: /src
+    volumes:
+      - ./src:/src
+    environment:
+      CARGO_CARGO_NEW_VCS: none
+    # platform:
+    #   linux/amd64

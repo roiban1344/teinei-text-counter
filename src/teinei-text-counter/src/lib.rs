@@ -13,7 +13,7 @@ pub fn count_grapheme_clusters(s: &str) -> usize {
     s.graphemes(true).count()
 }
 
-#[wasm_bindgen(js_name=toGraphemeClusters)]
-pub fn to_grapheme_clusters(s: &str) -> Array {
+#[wasm_bindgen(js_name=splitIntoGraphemeClusters)]
+pub fn split_into_grapheme_clusters(s: &str) -> Array {
     s.graphemes(true).map(|g| JsValue::from_str(g)).collect()
 }
