@@ -2,5 +2,7 @@
 **/*.rs.bk
 Cargo.lock
 bin/
-pkg/
+pkg/*
+!pkg/*.d.ts
+pkg/*.wasm.d.ts
 wasm-pack.log
