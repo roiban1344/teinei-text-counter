@@ -4,7 +4,7 @@
 
 ## Usage
 
-### `countGraphemeClusters`
+### `countGraphemeClusters(string)`
 
 ```js
 import { countGraphemeClusters } from 'teinei-text-counter'
@@ -16,7 +16,7 @@ console.log(countGraphemeClusters(text))
 //-> 🙂 7
 ```
 
-### `splitIntoGraphemeClusters`
+### `splitIntoGraphemeClusters(string)`
 
 ```js
 import { splitIntoGraphemeClusters } from 'teinei-text-counter'
