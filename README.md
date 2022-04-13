@@ -7,25 +7,23 @@
 ### `countGraphemeClusters`
 
 ```js
-import { countGraphemeClusters } teinei-text-counter
+import { countGraphemeClusters } from 'teinei-text-counter'
 
-const text = '𩸽おいしい😋'
+const text = '🌞Hello👩‍👩‍👧'
 console.log(text.length)
-//-> 🙁 8
+//-> 🙁 15
 console.log(countGraphemeClusters(text))
-//-> 🙂 6
+//-> 🙂 7
 ```
 
 ### `splitIntoGraphemeClusters`
 
 ```js
-import { splitIntoGraphemeClusters } teinei-text-counter
+import { splitIntoGraphemeClusters } from 'teinei-text-counter'
 
-const text = "🌞Hello👩‍👩‍👦"
+const text = '𩸽おいしい😋'
 console.log(text.split(''))
-//-> 🙁 ['\uD83C', '\uDF1E', 'H', 'e', 'l', 'l', 'o', '\uD83D', '\uDC69', '‍', '\uD83D', '\uDC69', '‍', '\uD83D', '\uDC66']
-//
-
+//-> 🙁 ['\uD867', '\uDE3D', 'お', 'い', 'し', 'い', '\uD83D', '\uDE0B']
 console.log(splitIntoGraphemeClusters(text))
-//-> 🙂 ['🌞', 'H', 'e', 'l', 'l', 'o', '👩‍👩‍👦']
+//-> 🙂 ['𩸽', 'お', 'い', 'し', 'い', '😋']
 ```
