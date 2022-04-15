@@ -6,7 +6,7 @@
 
 ### `countGraphemeClusters(string)`
 
-Returns the length of a string with a extended grapheme cluster as a minimum unit.
+Returns the length of a string with an extended grapheme cluster as a minimum unit.
 
 ```js
 import { countGraphemeClusters } from 'teinei-text-counter'
@@ -20,7 +20,7 @@ console.log(countGraphemeClusters(text))
 
 ### `splitIntoGraphemeClusters(string)`
 
-Split a string into extended grapheme clusters and return as an array.
+Splits a string into extended grapheme clusters and returns as an array.
 
 ```js
 import { splitIntoGraphemeClusters } from 'teinei-text-counter'
