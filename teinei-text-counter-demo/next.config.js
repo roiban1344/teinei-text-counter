@@ -12,4 +12,5 @@ module.exports = {
     config.output.webassemblyModuleFilename = (isServer ? '../' : '') + 'static/wasm/webassembly.wasm';
     return config;
   },
+  swcMinify: false
 };
