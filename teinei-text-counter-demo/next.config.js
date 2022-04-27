@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = module.exports = {
+module.exports = {
   ...nextConfig,
   webpack: (config, { isServer }) => {
     config.experiments = {
